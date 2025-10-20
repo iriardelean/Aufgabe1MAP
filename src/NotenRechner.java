@@ -53,4 +53,17 @@ public class NotenRechner {
         else
             return note;
     }
+
+    // Schreiben Sie eine Methode, die ein Array von Noten bekommen soll.
+    // Als Rückgabewert soll die Methode die maximal abgerundete Note liefern.
+    public static int getMaximalAbgerundeteNote(int[] noten) {
+        int[] abgerundete = getAbgerundetenNoten(noten);
+        if (abgerundete.length == 0)
+            return -1;
+        int maxNote = 0;
+        for (int i = 0; i < abgerundete.length; i++)
+            if (maxNote < abgerundete[i])
+                maxNote = abgerundete[i];
+        return maxNote;
+    }
 }

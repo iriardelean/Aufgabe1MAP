@@ -17,5 +17,8 @@ public class Main {
         // aufgabe 3
         int[] abgerundet = NotenRechner.getAbgerundetenNoten(noten);
         System.out.println("Aufgabe 3 - Abgerundete Noten: " + Arrays.toString(abgerundet));
+
+        // aufgabe 4
+        System.out.print("Aufgabe 4 - Maximale abgerundete Note: " + NotenRechner.getMaximalAbgerundeteNote(noten));
     }
 }
