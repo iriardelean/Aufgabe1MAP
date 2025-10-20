@@ -6,7 +6,16 @@ public class Main {
 
         System.out.println("Noten: " + Arrays.toString(noten));
 
+        // aufgabe 1
         int[] nichtAusreichendeNoten = NotenRechner.getNichtAusreichendeNoten(noten);
         System.out.println("Aufgabe 1 - Nicht ausreichende Noten: " + Arrays.toString(nichtAusreichendeNoten));
+
+        // aufgabe 2
+        System.out.print("Aufgabe 2 - Durchschnittswert: ");
+        System.out.printf("%.2f \n", NotenRechner.getDurchschnitt(noten));
+
+        // aufgabe 3
+        int[] abgerundet = NotenRechner.getAbgerundetenNoten(noten);
+        System.out.println("Aufgabe 3 - Abgerundete Noten: " + Arrays.toString(abgerundet));
     }
 }
